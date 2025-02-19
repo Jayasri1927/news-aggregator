@@ -23,7 +23,7 @@ function AllNews() {
     setIsLoading(true);
     setError(null);
 
-    fetch(`http://localhost:5000/all-news?page=${page}&pageSize=${pageSize}`)
+    fetch(`https://news-aggregator-1-3zsp.onrender.com/all-news?page=${page}&pageSize=${pageSize}`)
       .then(response => {
         if (response.ok) {
           return response.json();
